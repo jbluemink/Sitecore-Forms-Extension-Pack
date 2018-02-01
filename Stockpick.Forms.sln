@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{D9955E7B-1186-4F0C-8603-7372196BD726}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{E1043A3C-9C9C-4F1C-BA61-6BC424DECB76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExperienceForms", "ExperienceForms", "{CA14B20D-D6BD-429B-9CAC-EFB4A42BDDAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialisation", "Serialisation", "{A85738EB-F688-445F-86AD-0ECA67B9E3E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stockpick.Forms.Foundation.Serialization", "Foundation\Serialization\code\Stockpick.Forms.Foundation.Serialization\Stockpick.Forms.Foundation.Serialization.csproj", "{39403B84-A688-4131-9084-201DC7A016C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stockpick.Forms.Feature.ExperienceForms", "Features\ExperienceForms\code\Stockpick.Forms.Feature.ExperienceForms\Stockpick.Forms.Feature.ExperienceForms.csproj", "{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39403B84-A688-4131-9084-201DC7A016C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39403B84-A688-4131-9084-201DC7A016C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39403B84-A688-4131-9084-201DC7A016C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39403B84-A688-4131-9084-201DC7A016C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA14B20D-D6BD-429B-9CAC-EFB4A42BDDAC} = {E1043A3C-9C9C-4F1C-BA61-6BC424DECB76}
+		{A85738EB-F688-445F-86AD-0ECA67B9E3E6} = {D9955E7B-1186-4F0C-8603-7372196BD726}
+		{39403B84-A688-4131-9084-201DC7A016C4} = {A85738EB-F688-445F-86AD-0ECA67B9E3E6}
+		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2} = {CA14B20D-D6BD-429B-9CAC-EFB4A42BDDAC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
