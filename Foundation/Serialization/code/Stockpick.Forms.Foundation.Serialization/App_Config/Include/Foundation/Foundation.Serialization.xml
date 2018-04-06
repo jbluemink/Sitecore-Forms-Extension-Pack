@@ -1,0 +1,30 @@
+﻿<!--
+	See Unicorn.config for commentary on how configurations operate, or https://github.com/kamsar/Unicorn/blob/master/README.md
+-->
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <unicorn>
+      <configurations>
+        <configuration name="Foundation.Serialization" description="Sitecore.Solution.Framework Root items">
+          <targetDataStore physicalRootPath="$(sourceFolder)\foundation\serialization\serialization" type="Rainbow.Storage.SerializationFileSystemDataStore, Rainbow" useDataCache="false" singleInstance="true" />
+          <predicate type="Unicorn.Predicates.SerializationPresetPredicate, Unicorn" singleInstance="true">
+
+            <!--
+							Each include can also exclude specific subitems by path:
+							<exclude path="/sitecore/content" />
+
+							Excludes may also exclude all children at once by adding a trailing slash, e.g. this would include the root /sitecore item but no children
+							<include path="/sitecore">
+								<exclude path="/sitecore/" />
+							</include>
+
+							NOTE: after changing what is included or excluded, you should reserialize all items, or at least the added items
+							NOTE: the "name" attribute controls the folder name the items will go into (for SFS). If unspecified, the last path segment is used. Names must be unique across the configuration.
+						-->
+
+          </predicate>
+        </configuration>
+      </configurations>
+    </unicorn>
+  </sitecore>
+</configuration>

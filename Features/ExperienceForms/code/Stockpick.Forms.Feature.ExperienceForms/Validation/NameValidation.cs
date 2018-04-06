@@ -5,7 +5,7 @@ using System.Web.Mvc;
 using Sitecore.ExperienceForms.Mvc.Models.Fields;
 using Sitecore.ExperienceForms.Mvc.Models.Validation;
 
-namespace Stockpick.Forms.Feature.ExperienceForms
+namespace Stockpick.Forms.Feature.ExperienceForms.Validation
 {
 
     //Sitecore Example see https://doc.sitecore.net/sitecore_experience_platform/digital_marketing/sitecore_forms/setting_up_and_configuring/walkthrough_creating_a_custom_validation

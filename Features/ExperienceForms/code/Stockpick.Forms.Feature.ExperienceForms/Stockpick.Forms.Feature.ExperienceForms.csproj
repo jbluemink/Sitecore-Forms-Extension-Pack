@@ -66,6 +66,9 @@
       <HintPath>..\..\..\..\packages\Sitecore.ExperienceForms.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.ExperienceForms.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\..\..\..\Repos\brunel-website\packages\Sitecore.Kernel.NoReferences.8.2.170728\lib\NET452\Sitecore.Kernel.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -118,8 +121,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NameValidation.cs" />
+    <Compile Include="Submit\LogSubmit.cs" />
+    <Compile Include="Validation\NameValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Feature.Stockpick.Forms.Serialization.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
