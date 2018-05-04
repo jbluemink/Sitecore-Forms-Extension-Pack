@@ -140,6 +140,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\FormFields.cs" />
+    <Compile Include="Model\FormFieldSmall.cs" />
     <Compile Include="Submit\AzureQueueSubmit.cs" />
     <Compile Include="Submit\LogSubmit.cs" />
     <Compile Include="Validation\NameValidation.cs" />
