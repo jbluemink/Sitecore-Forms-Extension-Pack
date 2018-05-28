@@ -154,7 +154,8 @@
     <Content Include="App_Config\Include\Feature\Feature.Stockpick.Forms.Settings.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="web.config" />
+    <None Include="web.config" />
+    <None Include="Properties\PublishProfiles\Dev Deploy.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
