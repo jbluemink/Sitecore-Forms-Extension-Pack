@@ -1,0 +1,53 @@
+﻿---
+ID: "a91a5167-b649-43f1-a005-dc66a6311a2e"
+Parent: "60b9db66-78d5-4530-8e80-d3c7f7de5125"
+Template: "1ff3e9c9-73d7-4395-960a-7271eed8cc1e"
+Path: "/sitecore/system/Settings/Forms/Email Templates/Test E-mail Message"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180424T122607Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "5eaf34e9-f237-481d-a20f-9704ee7b88d7"
+      Hint: Message RichText
+      Value: |
+        <p>And here goes the Richtext message</p>
+        <p><strong>Subject:</strong> {Subject}</p>
+        <p><strong>From:</strong>&nbsp;{From}</p>
+        <p><strong>To:</strong>&nbsp;{To}</p>
+        <p><strong>CC:</strong>&nbsp;{CC}</p>
+        <p><strong>BCC:</strong>&nbsp;{BCC}</p>
+        <p><strong>Message:</strong>&nbsp;{Message}</p>
+        <p><strong>Number:</strong>&nbsp;{Number}</p>
+        <p><strong>Phone:</strong>&nbsp;{Phone}</p>
+        <p><strong>Checkbox:</strong>&nbsp;{Checkbox}</p>
+        <p><strong>Date:</strong>&nbsp;{Date}</p>
+        <p><strong>Dropdown:</strong>&nbsp;{Dropdown}</p>
+        <p><strong>Listbox:</strong>&nbsp;{Listbox}</p>
+        <p><strong>CheckboxList:</strong>&nbsp;{CheckboxList}</p>
+        <p><strong>RadioButtonList:</strong>&nbsp;{RadioButtonList}</p>
+        <p><strong>Password:</strong>&nbsp;{Password}</p>
+        <p>&nbsp;</p>
+    - ID: "95fc9607-a6e1-40e2-b4dd-7b7d23e97dec"
+      Hint: To
+      Value: "hardcoded@test.com, {To}"
+    - ID: "a5c64fe9-a29e-43cb-9861-d696f31bc586"
+      Hint: Cc
+      Value: "hardcoded@test.com, {CC}"
+    - ID: "bb6a889b-cf26-4188-9882-5498c9e64caa"
+      Hint: Bcc
+      Value: "{BCC}"
+    - ID: "bd289c06-a59e-4f38-b824-268973f3eda9"
+      Hint: Subject
+      Value: "Hardcoded part | {Subject}"
+    - ID: "df91b8a3-7262-42ea-96f0-74796a0a9bc7"
+      Hint: From
+      Value: "{From}"

@@ -1,34 +1,39 @@
 ﻿---
-ID: "0056141c-93e3-4df8-be35-d27e5270e74d"
-Parent: "1c601b81-8ea6-40a5-9144-34fcc938b62a"
-Template: "f698fe6d-35ca-4783-b36c-34928f3a23f2"
-Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/SingleLineText/Validation
+ID: "8aaa6332-6455-45c6-92bd-d59b2fcc7944"
+Parent: "2aa8309e-3b4b-4512-a25c-24fbd8275f5b"
+Template: "aa697a95-4189-4015-8a0b-da76d6a83589"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/Actions/SendEmailMessage/PageSettings/ItemTreeView
 DB: core
 SharedFields:
-- ID: "00fdab55-3a4a-4376-b786-7ea959bb0057"
-  Hint: ControlDefinitions
-  Type: TreelistEx
-  Value: |
-    {44763D7A-90F1-4759-8F88-B0D70603CB81}
-    {28A726CF-E532-4020-8FEF-F4329978210F}
-- ID: "91194d47-8df3-43e3-8310-67b718ce2c93"
-  Hint: ConfigurationItem
-  Value: "{D5E30763-0423-405B-910C-5CFE3D3CD738}"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 100
+- ID: "0cc7f24b-2013-46c6-8ae3-5233d094ff7c"
+  Hint: StaticData
+  Value: "{60B9DB66-78D5-4530-8E80-D3C7F7DE5125}"
+- ID: "4cec56f0-9fe2-4980-8085-62b0a0ab51ec"
+  Hint: Database
+  Value: $context_contentdatabase
+- ID: "e0f5c2e5-ea32-4463-aef5-925d4194b4a2"
+  Hint: IsCheckModeEnabled
+  Type: Checkbox
+  Value: 0
+- ID: "e46cf3aa-5ad6-4a61-ad2b-d9d5d6698b7d"
+  Hint: CheckMode
+  Value: Single
+- ID: "f2a83648-50d1-44b3-bea0-0f6124bf211c"
+  Hint: ShowHiddenItems
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: da
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Validering
+    Value: ItemTreeView
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171219T155055Z
+      Value: 20171219T155056Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -37,13 +42,13 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Validierung
+    Value: ItemTreeAnsicht
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171219T155543Z
+      Value: 20171219T155544Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -54,22 +59,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160921T074435Z
+      Value: 20170404T103808Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\admin
+        sitecore\Admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: 検証
+    Value: ツリー ビュー
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171219T155949Z
+      Value: 20171219T155950Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
