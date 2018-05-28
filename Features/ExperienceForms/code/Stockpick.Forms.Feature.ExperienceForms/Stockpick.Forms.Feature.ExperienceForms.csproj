@@ -135,15 +135,27 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Model\SendMail\SendEmailTemplates.scx.xslt">
+      <DependentUpon>SendEmailTemplates.scx</DependentUpon>
+    </Content>
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Actions\SendEmail.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\FormFields.cs" />
     <Compile Include="Model\FormFieldSmall.cs" />
+    <Compile Include="Model\SendMail\SendEmailTemplates.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SendEmailTemplates.scx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SendMail\SendMailActionData.cs" />
     <Compile Include="Submit\AzureQueueSubmit.cs" />
     <Compile Include="Submit\LogSubmit.cs" />
+    <Compile Include="Submit\SendMailAction.cs" />
     <Compile Include="Validation\NameValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -154,7 +166,13 @@
     <Content Include="App_Config\Include\Feature\Feature.Stockpick.Forms.Settings.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="web.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Stockpick.Forms.Smtp.config" />
+    <Content Include="Model\SendMail\SendEmailTemplates.scx">
+      <Generator>SitecoreCodeGenerator</Generator>
+      <LastGenOutput>SendEmailTemplates.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="web.config" />
+    <None Include="Properties\PublishProfiles\Dev Deploy.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
