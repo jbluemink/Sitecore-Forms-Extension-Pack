@@ -58,7 +58,7 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Tests.Submit
         }
 
         [Test]
-        public void Execute_AnyCase_ReturnsTrue()
+        public void Execute_ReturnsTrue()
         {
             // Arrange
             var logger = Substitute.For<ILogger>();
