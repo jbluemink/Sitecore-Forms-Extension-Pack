@@ -2,7 +2,7 @@
 ID: "4157f17d-cda9-4cfe-af09-f472635c87ed"
 Parent: "82b0d786-3222-4e8c-904d-a86fd73b97ee"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/FormsExtensionPack/Send Mail/E-mail Template/E-mail Setup/Message Text"
+Path: "/sitecore/templates/FormsExtensionPack/Feature/Send Mail/E-mail Template/E-mail Setup/Message Text"
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

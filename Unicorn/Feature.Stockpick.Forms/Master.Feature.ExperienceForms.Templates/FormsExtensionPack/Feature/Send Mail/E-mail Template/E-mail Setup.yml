@@ -2,7 +2,7 @@
 ID: "82b0d786-3222-4e8c-904d-a86fd73b97ee"
 Parent: "1ff3e9c9-73d7-4395-960a-7271eed8cc1e"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: "/sitecore/templates/FormsExtensionPack/Send Mail/E-mail Template/E-mail Setup"
+Path: "/sitecore/templates/FormsExtensionPack/Feature/Send Mail/E-mail Template/E-mail Setup"
 DB: master
 Languages:
 - Language: en
