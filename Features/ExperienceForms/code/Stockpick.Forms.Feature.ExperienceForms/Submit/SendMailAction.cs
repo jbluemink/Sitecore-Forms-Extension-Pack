@@ -14,12 +14,10 @@ using Stockpick.Forms.Feature.ExperienceForms.Model.SendMail;
 
 namespace Stockpick.Forms.Feature.ExperienceForms.Submit
 {
-    public class SendMailAction: SubmitActionBase<SendMailActionData>
+    public class SendMailAction : SubmitActionBase<SendMailActionData>
     {
-        private readonly string _keywordPrefix =
-            Translate.TextByLanguage("Forms.Actions.SendMail.KeywordPrefix", Context.Language, "{");
-        private readonly string _keywordSuffix =
-            Translate.TextByLanguage("Forms.Actions.SendMail.KeywordSuffix", Context.Language, "}");
+        private readonly string _keywordPrefix = Translate.TextByLanguage(Constants.Dictionary.Forms.Actions.SendMail.KeywordPrefix, Context.Language, "{");
+        private readonly string _keywordSuffix = Translate.TextByLanguage(Constants.Dictionary.Forms.Actions.SendMail.KeywordSuffix, Context.Language, "}");
 
         public SendMailAction(ISubmitActionData submitActionData) : base(submitActionData)
         {
@@ -33,7 +31,7 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Submit
         /// <returns></returns>
         protected override bool Execute(SendMailActionData data, FormSubmitContext formSubmitContext)
         {
-            Assert.ArgumentNotNull(formSubmitContext, nameof (formSubmitContext));
+            Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
             if (data == null || !(data.ReferenceId != Guid.Empty))
                 return false;
             var item = Context.Database.GetItem(new ID(data.ReferenceId));
@@ -52,11 +50,11 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Submit
                         From = new MailAddress(ReplaceKeywords(emailTemplate.From, formSubmitContext))
                     };
                 // To
-                FillMailAddressCollection(SplitEmails(ReplaceKeywords(emailTemplate.To, formSubmitContext)),emailMessage.To);
+                FillMailAddressCollection(SplitEmails(ReplaceKeywords(emailTemplate.To, formSubmitContext)), emailMessage.To);
                 // CC
-                FillMailAddressCollection(SplitEmails(ReplaceKeywords(emailTemplate.Cc, formSubmitContext)),emailMessage.CC);
+                FillMailAddressCollection(SplitEmails(ReplaceKeywords(emailTemplate.Cc, formSubmitContext)), emailMessage.CC);
                 // BCC
-                FillMailAddressCollection(SplitEmails(ReplaceKeywords(emailTemplate.Bcc, formSubmitContext)),emailMessage.Bcc);
+                FillMailAddressCollection(SplitEmails(ReplaceKeywords(emailTemplate.Bcc, formSubmitContext)), emailMessage.Bcc);
                 // Text
                 if (!string.IsNullOrEmpty(emailTemplate.MessageRichText))
                 {
@@ -88,7 +86,10 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Submit
         protected void FillMailAddressCollection(string[] emails, MailAddressCollection collection)
         {
             foreach (var email in emails)
-                collection.Add(email);
+            {
+                if (!string.IsNullOrEmpty(email))
+                    collection.Add(email);
+            }
         }
 
         /// <summary>
@@ -99,7 +100,7 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Submit
         protected string[] SplitEmails(string text)
         {
             return text
-                .Split(Translate.TextByLanguage("Forms.Actions.SendMail.EmailListSeparator", Context.Language, ",")
+                .Split(Translate.TextByLanguage(Constants.Dictionary.Forms.Actions.SendMail.EmailListSeparator, Context.Language, ",")
                     .ToCharArray()).Select(p => p.Trim()).Where(p => !string.IsNullOrEmpty(p)).ToArray();
         }
 
@@ -120,49 +121,49 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Submit
                 // InputViewModel<string> types
                 if (type.IsSubclassOf(typeof(InputViewModel<string>)))
                 {
-                    var field = (InputViewModel<string>) viewModel;
+                    var field = (InputViewModel<string>)viewModel;
                     valueToReplace = field.Value;
                 }
                 // InputViewModel<List<string>> types
                 else if (type.IsSubclassOf(typeof(InputViewModel<List<string>>)))
                 {
-                    var field = (InputViewModel<List<string>>) viewModel;
+                    var field = (InputViewModel<List<string>>)viewModel;
                     valueToReplace =
                         string.Join(
-                            Translate.TextByLanguage("Forms.Actions.SendMail.ListSeparator", Context.Language, ", "),
+                            Translate.TextByLanguage(Constants.Dictionary.Forms.Actions.SendMail.ListSeparator, Context.Language, ", "),
                             field.Value);
                 }
                 // InputViewModel<bool> types
                 else if (type.IsSubclassOf(typeof(InputViewModel<bool>)))
                 {
-                    var field = (InputViewModel<bool>) viewModel;
+                    var field = (InputViewModel<bool>)viewModel;
                     valueToReplace = field.Value
-                        ? Translate.Text("Forms.Actions.SendMail.CheckboxCheckedText")
-                        : Translate.Text("Forms.Actions.SendMail.CheckboxUncheckedText");
+                        ? Translate.Text(Constants.Dictionary.Forms.Actions.SendMail.CheckboxCheckedText)
+                        : Translate.Text(Constants.Dictionary.Forms.Actions.SendMail.CheckboxUncheckedText);
                 }
                 // InputViewModel<DateTime?> types
                 else if (type.IsSubclassOf(typeof(InputViewModel<DateTime?>)))
                 {
-                    var field = (InputViewModel<DateTime?>) viewModel;
-                    valueToReplace = field.Value?.ToString(Translate.Text("Forms.Actions.SendMail.DateFormatMask")) ??
-                                     Translate.Text("Forms.Actions.SendMail.CheckboxUncheckedText");
+                    var field = (InputViewModel<DateTime?>)viewModel;
+                    valueToReplace = field.Value?.ToString(Translate.Text(Constants.Dictionary.Forms.Actions.SendMail.DateFormatMask)) ??
+                                     Translate.Text(Constants.Dictionary.Forms.Actions.SendMail.CheckboxUncheckedText);
                 }
                 // InputViewModel<DateTime> types
                 else if (type.IsSubclassOf(typeof(InputViewModel<DateTime>)))
                 {
-                    var field = (InputViewModel<DateTime>) viewModel;
-                    valueToReplace = field.Value.ToString(Translate.Text("Forms.Actions.SendMail.DateFormatMask"));
+                    var field = (InputViewModel<DateTime>)viewModel;
+                    valueToReplace = field.Value.ToString(Translate.Text(Constants.Dictionary.Forms.Actions.SendMail.DateFormatMask));
                 }
                 // InputViewModel<double?> types
                 else if (type.IsSubclassOf(typeof(InputViewModel<double?>)))
                 {
-                    var field = (InputViewModel<double?>) viewModel;
-                    valueToReplace = field.Value?.ToString(Translate.Text("Forms.Actions.SendMail.DoubleFormatMask"));
+                    var field = (InputViewModel<double?>)viewModel;
+                    valueToReplace = field.Value?.ToString(Translate.Text(Constants.Dictionary.Forms.Actions.SendMail.DoubleFormatMask));
                 }
                 else
                 {
                     valueToReplace =
-                        string.Format(Translate.Text("Forms.Actions.SendMail.UnsupportedFieldTypeErrorMessage"),
+                        string.Format(Translate.Text(Constants.Dictionary.Forms.Actions.SendMail.UnsupportedFieldTypeErrorMessage),
                             type.FullName);
                 }
 
