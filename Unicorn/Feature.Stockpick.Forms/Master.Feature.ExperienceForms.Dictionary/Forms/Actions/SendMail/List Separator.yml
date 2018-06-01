@@ -24,3 +24,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\rpeplau
+- Language: "ja-JP"
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: , 
+  Versions:

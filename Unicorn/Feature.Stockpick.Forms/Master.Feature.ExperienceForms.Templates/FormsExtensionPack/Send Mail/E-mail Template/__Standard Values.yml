@@ -1,0 +1,18 @@
+﻿---
+ID: "d32a576c-54d5-4250-8851-e860659558b8"
+Parent: "1ff3e9c9-73d7-4395-960a-7271eed8cc1e"
+Template: "1ff3e9c9-73d7-4395-960a-7271eed8cc1e"
+Path: "/sitecore/templates/FormsExtensionPack/Send Mail/E-mail Template/__Standard Values"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180419T185519Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\rpeplau
