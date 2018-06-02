@@ -1,0 +1,25 @@
+﻿---
+ID: "43ebbbe5-f256-4abe-8f5c-022f5ab7ed74"
+Parent: "df698a60-1c55-4536-98f8-58ba5b1f2156"
+Template: "0a1a6dce-078a-4ece-9fce-71cade57c7b8"
+Path: /sitecore/system/Settings/Forms/Validations/Name Validation
+DB: master
+SharedFields:
+- ID: "0cfa025b-c124-41de-9dc5-2cd5841553fe"
+  Hint: Type
+  Value: Stockpick.Forms.Feature.ExperienceForms.Validation.NameValidation, Stockpick.Forms.Feature.ExperienceForms
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180208T150559Z
+    - ID: "2ce7436e-2b14-47e8-9103-7d2ea2f31159"
+      Hint: Message
+      Value: "{0} contains an invalid name."
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
