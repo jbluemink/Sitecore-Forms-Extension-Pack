@@ -1,7 +1,10 @@
-﻿namespace Stockpick.Forms.Feature.ExperienceForms
+﻿using Sitecore.Data;
+
+namespace Stockpick.Forms.Feature.ExperienceForms
 {
     public struct Constants
     {
+
         public struct Dictionary
         {
             public struct Forms
@@ -22,6 +25,22 @@
                     }
                 }
             }
+        }
+
+        public struct Templates
+        {
+            public struct Content
+            {
+                public struct Hidden
+                {
+                    public struct Fields
+                    {
+                        public static readonly ID Value = new ID("{29D58F06-3CA7-443A-A2CF-9A2916FC280B}");
+                    }
+                }
+            }
+
+
         }
     }
 }

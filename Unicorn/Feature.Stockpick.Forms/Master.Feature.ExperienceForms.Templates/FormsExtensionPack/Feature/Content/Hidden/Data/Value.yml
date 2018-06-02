@@ -1,0 +1,18 @@
+﻿---
+ID: "29d58f06-3ca7-443a-a2cf-9a2916fc280b"
+Parent: "ce4f73bd-7787-4e4b-8474-e31199590f77"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/FormsExtensionPack/Feature/Content/Hidden/Data/Value
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180601T200418Z

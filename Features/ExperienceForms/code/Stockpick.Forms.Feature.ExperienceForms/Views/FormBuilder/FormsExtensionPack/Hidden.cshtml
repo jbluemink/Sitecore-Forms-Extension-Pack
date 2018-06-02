@@ -1,0 +1,14 @@
+﻿@model Stockpick.Forms.Feature.ExperienceForms.Model.Content.HiddenViewModel
+
+@if (!Html.Sitecore().IsExperienceForms())
+{
+    <input type="hidden" value="@Model.Value" />
+}
+else
+{
+    <div class="form-group">
+        <p class="form-control">
+            @Model.Name (hidden)
+        </p>
+    </div>
+}
