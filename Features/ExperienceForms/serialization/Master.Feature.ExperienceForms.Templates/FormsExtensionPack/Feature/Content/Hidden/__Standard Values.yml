@@ -1,0 +1,14 @@
+﻿---
+ID: "240f8a72-de15-4929-bfa6-1697db902549"
+Parent: "959c6dcb-25da-4b61-aa0a-b55877075cd8"
+Template: "959c6dcb-25da-4b61-aa0a-b55877075cd8"
+Path: /sitecore/templates/FormsExtensionPack/Feature/Content/Hidden/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180601T200941Z
