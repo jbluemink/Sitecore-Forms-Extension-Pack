@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Model\Content\UploadViewModel.cs" />
     <Compile Include="Model\FormFields.cs" />
     <Compile Include="Model\FormFieldSmall.cs" />
     <Compile Include="Model\SendMail\SendEmailTemplates.Designer.cs">
@@ -173,6 +174,9 @@
       <Generator>SitecoreCodeGenerator</Generator>
       <LastGenOutput>SendEmailTemplates.Designer.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <Content Include="Views\FormBuilder\FormsExtensionPack\Upload.cshtml" />
     <None Include="web.config" />
     <None Include="Properties\PublishProfiles\Dev Deploy.pubxml" />
     <None Include="web.Debug.config">
@@ -182,6 +186,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
