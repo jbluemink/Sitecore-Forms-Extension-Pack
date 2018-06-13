@@ -133,8 +133,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\code\Stockpick.Forms.Feature.ExperienceForms\Stockpick.Forms.Feature.ExperienceForms.csproj">
-      <Project>{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}</Project>
+    <ProjectReference Include="..\code\Stockpick.Forms.Feature.ExperienceForms.csproj">
+      <Project>{0eb567c5-c58d-423c-9e2e-d86f140bc2c2}</Project>
       <Name>Stockpick.Forms.Feature.ExperienceForms</Name>
     </ProjectReference>
   </ItemGroup>
