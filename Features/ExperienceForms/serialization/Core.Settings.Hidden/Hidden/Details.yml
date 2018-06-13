@@ -1,0 +1,28 @@
+﻿---
+ID: "6f6ed8d7-9243-4c63-9a6f-18e9ab6031a2"
+Parent: "6d8819b4-a604-4faf-8f4b-4ba558c2fdd0"
+Template: "f698fe6d-35ca-4783-b36c-34928f3a23f2"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Hidden/Details
+DB: core
+SharedFields:
+- ID: "00fdab55-3a4a-4376-b786-7ea959bb0057"
+  Hint: ControlDefinitions
+  Type: TreelistEx
+  Value: |
+    {362DF97E-0B79-477E-906A-F830DF8D882D}
+    {198DBDF1-63B2-4728-B015-C6818AEC441A}
+- ID: "91194d47-8df3-43e3-8310-67b718ce2c93"
+  Hint: ConfigurationItem
+  Value: "{D19B6A60-0E25-41B8-9FF8-9316AC03DA21}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180601T202355Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
