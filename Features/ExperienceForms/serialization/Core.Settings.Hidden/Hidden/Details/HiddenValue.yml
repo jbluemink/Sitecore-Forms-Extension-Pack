@@ -2,12 +2,12 @@
 ID: "198dbdf1-63b2-4728-b015-c6818aec441a"
 Parent: "6f6ed8d7-9243-4c63-9a6f-18e9ab6031a2"
 Template: "dd74148e-e8fc-4774-8cba-bafdb76a4e47"
-Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Hidden/Details/Value
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGridForm/PageSettings/Settings/Hidden/Details/HiddenValue
 DB: core
 SharedFields:
 - ID: "3e079fc3-6b2d-41c9-9204-374a786fc761"
   Hint: BindingConfiguration
-  Value: value=Value
+  Value: hiddenValue=Value
 - ID: "a176e7b0-1c0b-4f2e-a494-2df342a75c0e"
   Hint: IsLabelOnTop
   Type: Checkbox
@@ -22,4 +22,4 @@ Languages:
       Value: 20180601T202458Z
     - ID: "3885a716-2eed-47ae-9132-32225f0458ff"
       Hint: FormLabel
-      Value: Value
+      Value: Hidden Value

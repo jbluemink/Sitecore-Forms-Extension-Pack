@@ -33,9 +33,15 @@ namespace Stockpick.Forms.Feature.ExperienceForms
             {
                 public struct Hidden
                 {
+                    public struct FieldIds
+                    {
+                        public static readonly ID HiddenValue = new ID("{29D58F06-3CA7-443A-A2CF-9A2916FC280B}");
+                    }
+
                     public struct Fields
                     {
-                        public static readonly ID Value = new ID("{29D58F06-3CA7-443A-A2CF-9A2916FC280B}");
+                        public static readonly string HiddenValue = "HiddenValue";
+
                     }
                 }
             }

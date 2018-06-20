@@ -22,7 +22,8 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Tests.Models
 
             var id = ID.NewID;
             var hiddenFieldDbItem = new DbItem("Hidden", id);
-            hiddenFieldDbItem.Add(new DbField("Value", Constants.Templates.Content.Hidden.Fields.Value) { Value = "RandomValue" });
+            hiddenFieldDbItem.Add(new DbField(nameof(Constants.Templates.Content.Hidden.FieldIds.HiddenValue), 
+                Constants.Templates.Content.Hidden.FieldIds.HiddenValue) { Value = "RandomValue" });
 
             using (var db = new Db { hiddenFieldDbItem })
             {
@@ -30,7 +31,7 @@ namespace Stockpick.Forms.Feature.ExperienceForms.Tests.Models
                 hiddenViewModel.InitItemProperties(hiddenItem);
             }
 
-            Assert.That(hiddenViewModel.Value, Is.SameAs("RandomValue"));
+            Assert.That(hiddenViewModel.HiddenValue, Is.SameAs("RandomValue"));
 
         }
     }
