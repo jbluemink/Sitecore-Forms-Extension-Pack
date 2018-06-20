@@ -10,7 +10,7 @@ SharedFields:
   Value: Office/32x32/arrow_from.png
 - ID: "12594037-53e5-44c0-ad63-deb52dead374"
   Hint: View Path
-  Value: FieldTemplates/SingleLineText
+  Value: FormsExtensionPack/Upload
 - ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
   Hint: Model Type
   Value: Sitecore.ExperienceForms.Mvc.Models.Fields.StringInputViewModel,Sitecore.ExperienceForms.Mvc
@@ -26,9 +26,7 @@ SharedFields:
 - ID: "b63df058-0f28-469c-aa25-e228690462ac"
   Hint: Allowed Validations
   Type: Treelist
-  Value: |
-    {83E96D09-11C8-4132-8A8A-76D8DB8208D6}
-    {43EBBBE5-F256-4ABE-8F5C-022F5AB7ED74}
+  Value: 
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 900

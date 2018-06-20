@@ -1,3 +1,7 @@
-﻿@model Stockpick.Forms.Feature.ExperienceForms.Model.Content.UploadViewModel
+﻿@using Sitecore.ExperienceForms.Mvc.Html
+@using Sitecore.ExperienceForms.Mvc
+@model Stockpick.Forms.Feature.ExperienceForms.Model.Content.UploadViewModel
 
-<input type="file" name="fileToUpload" id="fileToUpload">
+<label for="@Html.IdFor(m => Model.Value)" class="@Model.LabelCssClass">@Html.DisplayTextFor(t => Model.Title)</label>
+<input id="@Html.IdFor(m => Model.Value)" name="@Html.NameFor(m => Model.Value)" class="@Model.CssClass" type="file" value="@Model.Value" @if (Model.MaxLength > 0) { <text> maxlength="@Model.MaxLength" </text> } placeholder="@Model.PlaceholderText" data-sc-tracking="@Model.IsTrackingEnabled" data-sc-field-name="@Model.Name" @Html.GenerateUnobtrusiveValidationAttributes(m => m.Value) />
+@Html.ValidationMessageFor(m => Model.Value)

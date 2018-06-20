@@ -177,6 +177,8 @@
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <Content Include="Views\FormBuilder\FormsExtensionPack\Upload.cshtml" />
+    <Content Include="Views\FormBuilder\web.config" />
+    <Content Include="Views\web.config" />
     <None Include="web.config" />
     <None Include="Properties\PublishProfiles\Dev Deploy.pubxml" />
     <None Include="web.Debug.config">
