@@ -13,7 +13,7 @@ SharedFields:
   Value: FormsExtensionPack/Upload
 - ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
   Hint: Model Type
-  Value: Sitecore.ExperienceForms.Mvc.Models.Fields.StringInputViewModel,Sitecore.ExperienceForms.Mvc
+  Value: Stockpick.Forms.Feature.ExperienceForms.Model.Content.UploadViewModel, Stockpick.Forms.Feature.ExperienceForms
 - ID: "73f3c325-9b2a-4854-b698-038e06887fcd"
   Hint: Property Editor
   Value: "{1C601B81-8EA6-40A5-9144-34FCC938B62A}"
