@@ -1,0 +1,20 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "WEBSITE_SLOT_NAME": "Production",
+    "FUNCTIONS_EXTENSION_VERSION": "~1",
+    "ScmType": "None",
+    "UploadStorageAccessKey": "DefaultEndpointsProtocol=https;AccountName=xxxx;AccountKey=xxxx;EndpointSuffix=core.windows.net",
+    "WEBSITE_AUTH_ENABLED": "False",
+    "REMOTEDEBUGGINGVERSION": "11.0.611103.400",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "xxx",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=xxx;AccountKey=xxxx",
+    "WEBSITE_NODE_DEFAULT_VERSION": "6.5.0",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=xxxx;AccountKey=xxxxx",
+    "WEBSITE_CONTENTSHARE": "xxxx",
+    "WEBSITE_AUTH_AUTO_AAD": "False",
+    "WEBSITE_SITE_NAME": "xxx",
+    "WEBSITE_AUTH_LOGOUT_PATH": "/.auth/logout",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=xxx;AccountKey=xxxx"
+  }
+}

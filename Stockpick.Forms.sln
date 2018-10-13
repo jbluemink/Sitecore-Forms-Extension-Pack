@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stockpick.Forms.Feature.Exp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stockpick.Forms.Feature.ExperienceForms", "Features\ExperienceForms\code\Stockpick.Forms.Feature.ExperienceForms.csproj", "{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sitecoreupload", "Features\ExperienceForms\azure\sitecoreupload\sitecoreupload.csproj", "{315186B0-A879-418A-9DB7-9463356CF446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315186B0-A879-418A-9DB7-9463356CF446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315186B0-A879-418A-9DB7-9463356CF446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315186B0-A879-418A-9DB7-9463356CF446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315186B0-A879-418A-9DB7-9463356CF446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,9 +51,10 @@ Global
 		{39403B84-A688-4131-9084-201DC7A016C4} = {A85738EB-F688-445F-86AD-0ECA67B9E3E6}
 		{6D84E8F4-6A73-4815-AF1C-2508F0EFC156} = {CA14B20D-D6BD-429B-9CAC-EFB4A42BDDAC}
 		{0EB567C5-C58D-423C-9E2E-D86F140BC2C2} = {CA14B20D-D6BD-429B-9CAC-EFB4A42BDDAC}
+		{315186B0-A879-418A-9DB7-9463356CF446} = {CA14B20D-D6BD-429B-9CAC-EFB4A42BDDAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E5187BA4-30E9-44AB-95E0-02257BBD03E5}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {E5187BA4-30E9-44AB-95E0-02257BBD03E5}
 	EndGlobalSection
 EndGlobal
