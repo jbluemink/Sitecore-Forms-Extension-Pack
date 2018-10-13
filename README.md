@@ -14,7 +14,7 @@ http://www.nishtechinc.com/Blog/2018/April/Send-E-mail-Action-to-Sitecore-9-Form
 Adjust the targetDataStore physicalRootPath in Unicorn.config
 
 ## Setup Upload Azure functions.
--Publish project Feature/ExpienceForms/sitecoreupload to Azure
--configer Application settings UploadStorageAccessKey to an Azure Blob storage
--add your url to the CORS.
--set your url to the Azure functon in \Features\ExperienceForms\code\Views\FormBuilder\FormsExtensionPack\Upload.cshtml
+- Publish project Feature/ExpienceForms/sitecoreupload to Azure
+- Configer Application settings UploadStorageAccessKey to an Azure Blob storage
+- Add your Sitecore hostnames to the Azure function CORS.
+- Set your url to the Azure function in \Features\ExperienceForms\code\Views\FormBuilder\FormsExtensionPack\Upload.cshtml
