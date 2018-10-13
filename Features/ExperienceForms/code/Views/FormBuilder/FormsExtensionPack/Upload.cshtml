@@ -3,15 +3,16 @@
 @using Sitecore.ExperienceForms.Mvc
 @model Stockpick.Forms.Feature.ExperienceForms.Model.Content.UploadViewModel
 
-<label for="@Html.IdFor(m => Model.Value)" class="@Model.LabelCssClass">@Html.DisplayTextFor(t => Model.Title)</label>
-<input id="@Html.IdFor(m => Model.Value)" name="@Html.NameFor(m => Model.Value)" class="uploadInputField @Model.CssClass" type="file" value="@Model.Value" @if (Model.MaxLength > 0) { <text> maxlength="@Model.MaxLength" </text> } placeholder="@Model.PlaceholderText" data-sc-tracking="@Model.IsTrackingEnabled" data-sc-field-name="@Model.Name" @Html.GenerateUnobtrusiveValidationAttributes(m => m.Value) />
+<label for="@("file"+Html.IdFor(m => Model.Value))" class="@Model.LabelCssClass">@Html.DisplayTextFor(t => Model.Title)</label>
+<input id="@("file"+Html.IdFor(m => Model.Value))" name="@Html.NameFor(m => Model.Value)" class="uploadInputField @Model.CssClass" type="file" value="@Model.Value" @if (Model.MaxLength > 0) { <text> maxlength="@Model.MaxLength" </text> } placeholder="@Model.PlaceholderText" data-sc-tracking="@Model.IsTrackingEnabled" data-sc-field-name="@Model.Name" @Html.GenerateUnobtrusiveValidationAttributes(m => m.Value) />
 @Html.ValidationMessageFor(m => Model.Value)
 <button id="@("upload"+ Html.IdFor(m => Model.Value))">Upload</button>
+<input type="hidden" id="@Html.IdFor(m => Model.Value)" name="@Html.NameFor(m => Model.Value)" value="empty"/>
 <span id="@("success"+ Html.IdFor(m => Model.Value))"></span>
 <script>
     $("@("#upload"+Html.IdFor(m => Model.Value))").on("click", function (evt) {
         var documentData = new FormData();
-        documentData.append('file', $('input#@Html.IdFor(m => Model.Value)')[0].files[0]);
+        documentData.append('file', $('input#@("file"+Html.IdFor(m => Model.Value))')[0].files[0]);
         $.ajax({
             url: 'https://sitecoreupload.azurewebsites.net/api/SitecoreFormUpload',
             type: 'POST',
@@ -21,7 +22,7 @@
             processData: false,
             success: function (response) {
                 $("@("#success"+ Html.IdFor(m => Model.Value))").html("Upload done");
-                //alert("Document uploaded successfully.");
+                $("@("#"+Html.IdFor(m => Model.Value))").attr('value',response.name);
             }
         });
 
