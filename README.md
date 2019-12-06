@@ -4,6 +4,7 @@ The current Sitecore Forms for Sitecore 9 is missing a lot of basic functionalit
 ## Cloud
 Sitecore Forms and Cloud
 Azure cloud solutions offer scalability and reliability with Sitecore Forms you can also easily use advanced cloud solutions. The first thing you need is a save action that puts a message in a queue. you can go further from there.
+See also the new version with support for Sitecore 9.3 file uploads. http://www.stockpick.nl/english/sitecore-93-forms-process-sensitive-files/
 
 ## Send E-mail Action
 The Send E-mail Action is a port of the existent action hosted on https://bitbucket.org/nishtechinc/formssendmail
